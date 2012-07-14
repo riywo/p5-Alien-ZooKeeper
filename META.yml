@@ -1,0 +1,33 @@
+---
+abstract: 'Installation of Perl bindings to ZooKeeper'
+author:
+  - 'Ryosuke IWANAGA (riywo) <riywo.jp(at)gmail.com>'
+build_requires:
+  ExtUtils::CBuilder: 0
+  File::ShareDir: 0
+configure_requires:
+  File::Which: 0
+  File::chdir: 0
+  LWP::Simple: 0
+  Module::Build: 0
+dynamic_config: 1
+generated_by: 'Module::Build version 0.4, CPAN::Meta::Converter version 2.120630'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Alien-ZooKeeper
+no_index:
+  directory:
+    - inc
+    - author
+provides:
+  Alien::ZooKeeper:
+    file: lib/Alien/ZooKeeper.pm
+    version: 0.01
+requires:
+  File::ShareDir: 1.00
+  perl: 5.008001
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.01
